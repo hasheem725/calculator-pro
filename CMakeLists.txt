@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
 project(CalculatorPro)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 98)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Include directories
 include_directories(include)
 
 # Create a library for the calculator logic
-add_library(calc_lib src/calculator.cpp src/parser.cpp)
+add_library(calc_lib src/calculator.cpp)
 
 # Main Application
 add_executable(calculator_app src/main.cpp)
